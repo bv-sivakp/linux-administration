@@ -1,0 +1,8 @@
+AWK - Pattern scanning and text processing language
+
+KeyValue="Key#Value"
+echo $(awk -F# '{print $1}' <<< $keyValue) # Key
+echo $(awk -F# '{print $1}' <<< $keyValue) # Value
+
+Learn about AWK
+https://www.tutorialspoint.com/awk/awk_quick_guide.htm

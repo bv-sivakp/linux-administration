@@ -1,0 +1,54 @@
+$clear => To clear screen
+$hostname => To Get hostname
+$whoami => username
+$ip addr show => System Ip address
+$poweroff => To poweroff
+$reboot => To reboot
+$man => help the command information
+$uptime => current system time
+ifconfig (for ip address)/ip addr show/hostname - I 
+reboot
+poweroff
+hostname
+/etc/network/interfaces
+date 
+date +"%H:%M" (Hour and minitues)
+curl - curl is a tool to transfer data from or to a server, using one of the supported protocols(HTTP, HTTPS, IAMP,POP3 and others)
+
+To connect remote server
+ssh user@ip-address
+
+To remove CRLF to LF
+dos2unix script.sh
+unix2dos script.sh
+
+operators
+HOST="google.com1"
+ping -c 1 $HOST && echo "$HOST is reachable"
+ping -c 1 $HOST || echo "$HOST is not reachable"
+
+editors with sytax highlighting to avoid scripting errors during script writing
+
+vi/vim
+emacs
+nano
+
+For software packages
+==========================
+$wget => To download a software
+For uninstallation
+dpkg -l | grep postgres
+sudo apt-get --purge remove pgdg-keyring postgresql-10 postgresql-client-10 postgresql-client-common postgresql-common
+
+WinScp => To copy windows to linux
+
+sql-plus
+==========
+nohup - POSIX Command means no hang up
+expdp - For export in oracle
+sqlplus - Is a command-line tool for accessing Oracle Database XE
+To connect sqlplus username/password@host:port/service
+
+
+
+

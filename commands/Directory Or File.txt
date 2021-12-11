@@ -1,0 +1,80 @@
+List directories
+
+$ls or dir => list directories
+$ls -a  => to list all directories including hidden
+$ll => lists all folders including hidden
+$ls -al => with permissons
+$pwd => present working directory
+$ls ~ | wc -l - taking the output from one command (referred to as standard output or STDOUT) 
+                and feeding it directly in as the input to another command (standard input or STDIN).
+ls -lrt will give a long listing, oldest first, which is handy for seeing which files in a large directory have recently been changed.
+
+Change Directory 
+
+$cd / =>  Navigate to root
+$cd ..  or  cd ../../ => Go back one directory or further
+$cd ~/Desktop  => change directory starting from my home directory
+$cd /Desktop => change directory with absolute path
+$cd /tmp/  => navigate to the temp directory
+$cd ~ => navigate to the home directory
+ 
+
+Directory and files
+
+$mkdir /tmp/tutorial => To create a directory
+$mkdir dir3 dir4 => To Create directories in same path
+$mkdir -p dir4/dir5 => To Create Strucutured directory path , here p refers create parent directory too
+$ls > output.txt => print to console to file
+$less combined.txt => To Read page wide text
+$mv or cp => move or copy
+$mv backup_combined.txt combined_backup.txt => change file name
+
+Remove Operations
+$rm out.txt => remove files
+$rmdir dir5 => remove folders (removes folder if there are no files in it)
+$rm -r dir2 => you want to delete a whole directory and anything within it
+$rm -rf dir2 => you want to delete a whole directory and anything within it with force
+
+File Commands
+
+$touch file1.txt  => To create a file
+$touch file1.txt file2.txt => To create multiple files
+$cat - To print the file content in the standard output
+$cat -v <filename.sh> # returns file with carriage returns
+$grep - Used for searching data
+$sed - To replace the content of the file
+example:
+sed -i "s/#ENV-NAME#/$DeployTarget/g" manifest.json (To update ENV_NAME globally and update the file)
+
+To copy files from local to linux machine
+scp file.txt user@ipaddress:<path>/.
+
+To remove new line characters from a file
+tr '\n' ' ' < file.csv > newfile.csv && mv newfile.csv file.csv
+
+To remove empty lines from a file ( https://www.cyberciti.biz/faq/using-sed-to-delete-empty-lines/ )
+sed '/^$/d' <input-file>
+echo "LINE" | sed '/^$/d'
+echo "$VAR" | sed '/^$/d'
+sed '/^[[:space:]]*$/d' input_file
+
+File descriptor (Unique identification of file)
+
+Three common descriptiors defined by POSIX(POSIX stands for Portable Operating System Interface, and is an IEEE standard designed to facilitate application portability) API.
+
+0 - Standard Input
+1 - Standard Ouput
+2 - Standard Error
+
+Redirect standard output (file handle 1) to /dev/null  ( /dev/null - Data will be discarded)
+1>/dev/null
+
+Redirect standard error (file handle 2) to standard output 
+2>&1
+
+1>/dev/null 2>&1  ( & symbol for file descriptor and without end 1 would be considered as a filename)
+1>/dev/null 2>&1 means, that every Standard Error will be forwarded to the Standard Output and this will be also forwarded to a black hole where all information is lost.
+
+
+
+

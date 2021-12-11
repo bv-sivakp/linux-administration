@@ -1,0 +1,38 @@
+nano editor
+================
+To install (if it is not installed)
+$sudo apt-get install nano
+
+$nano (To open the editor)
+$nano file.txt (To open the editor with filename)
+
+ctrl + o => Save with filename
+ctrl + x => To exit the editor
+ctrl + r => To open another with in the same buffer
+ALT + > & ALT + < => To navigate between the buffers
+
+Copy and Paste
+
+1) Alt + A - set a starting point
+2) Right arrow - To select the content
+3) Alt + ^ - end point to copy the region
+4) Ctrl + U - paste
+5) Alt+ A, select text , Ctrl + K - cut
+
+Navigating data or code
+Alt + \ - Top
+Alt + / - Bottom
+Alt + G - Goto by line number
+
+Ctrl + W - search
+Alt + R - search to replace
+
+Ctrl + Y - Page UP
+Ctrl + V - Page down
+Ctrl + I - Tab
+Ctrl + D - Delete characters
+
+
+Other Editors
+vi, vi -  file editing
+vi used in cent os

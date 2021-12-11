@@ -1,0 +1,5 @@
+User related
+============
+$sudo su -  => To run as super user (super user do)
+$useradd => add user
+$passwd => set password

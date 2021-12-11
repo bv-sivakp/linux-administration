@@ -1,0 +1,6 @@
+cron tab is used to schedule commands to be executed periodically.
+
+crontab -l (To list scheduled crons)
+
+To form cron expression
+https://crontab.guru/
