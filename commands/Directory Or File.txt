@@ -1,5 +1,6 @@
 List directories
 
+~ - Home folder
 $ls or dir => list directories
 $ls -a  => to list all directories including hidden
 $ll => lists all folders including hidden
