@@ -28,3 +28,8 @@
 
 #### Chmod Calculator
 - https://chmod-calculator.com/
+
+#### Editors
+- vi, vim
+- nano
+
