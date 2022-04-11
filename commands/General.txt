@@ -10,7 +10,7 @@ ifconfig (for ip address)/ip addr show/hostname - I
 reboot
 poweroff
 hostname
-/etc/network/interfaces
+/etc/network/interfaces - configuration and ip address details
 date 
 date +"%H:%M" (Hour and minitues)
 curl - curl is a tool to transfer data from or to a server, using one of the supported protocols(HTTP, HTTPS, IAMP,POP3 and others)
